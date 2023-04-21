@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/avr-gcc",
+      "-g",
+      "-Wall",
+      "-O2",
+      "-mmcu=atmega8",
+      "-c",
+      "-o",
+      "demo.o",
+      "demo.c"
+    ],
+    "directory": "/home/wolp/Documentos/avr/demo",
+    "file": "/home/wolp/Documentos/avr/demo/demo.c",
+    "output": "/home/wolp/Documentos/avr/demo/demo.o"
+  }
+]
