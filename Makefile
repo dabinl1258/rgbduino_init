@@ -2,7 +2,7 @@ PRG            = demo
 OBJ            = demo.o
 PTIMIZE       = -O2
 
-MCU_TARGET		= arduino/avr/uno
+MCU_TARGET		= atmega328p
 DEFS           =
 LIBS           =
 
@@ -93,5 +93,7 @@ pdf: $(PRG).pdf
 %.png: %.fig
 	$(FIG2DEV) -L png $< $@
 
+FQBN = ardino/avr/uni
+PORT = /dev/ttyUSB0 
 flash:
-	arduino-cli upload -p /dev/ttyUSB0 -i $(PRG).bin --fqbn $(MCU_TARGET) 
+	arduino-cli upload -p $(PORT) -i $(PRG).bin --fqbn $(FQBN) 
